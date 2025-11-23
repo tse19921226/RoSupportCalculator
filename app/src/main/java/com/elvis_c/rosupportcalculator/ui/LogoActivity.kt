@@ -13,19 +13,21 @@ import com.elvis_c.rosupportcalculator.databinding.ActivityLogoBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import timber.log.Timber
 
 @AndroidEntryPoint
 class LogoActivity : BaseActivity() {
     private lateinit var binding: ActivityLogoBinding
     private lateinit var logoViewModel: LogoViewModel
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = DataBindingUtil.setContentView(this, R.layout.activity_logo)
 
         logoViewModel = ViewModelProvider(this)[LogoViewModel::class.java]
         binding.lifecycleOwner = this
+        applySystemBarInsets(binding.root)
     }
 
     override fun onResume() {
@@ -34,6 +36,7 @@ class LogoActivity : BaseActivity() {
     }
 
     fun startMainActivity() {
+        Timber.d("start MainActivity")
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RoSupportCalculator</string>
+
+    <string name="main_role">My Role</string>
+    <string name="main_gear">Popular Gear</string>
+    <string name="main_new_role">New Role</string>
+
 </resources>

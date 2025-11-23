@@ -7,9 +7,7 @@ plugins {
 
 android {
     namespace = "com.elvis_c.rosupportcalculator"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.elvis_c.rosupportcalculator"
