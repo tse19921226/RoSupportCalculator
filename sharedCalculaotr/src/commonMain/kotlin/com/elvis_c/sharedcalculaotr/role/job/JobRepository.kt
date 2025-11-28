@@ -153,34 +153,5 @@ object JobRepository {
     fun get(branch: JobBranch): JobInfo =
         jobs.first { it.branch == branch }
 
-
-    fun applyBonus(
-        char: CharacterStatus
-    ): CharacterStatus {
-        if (!char.applyJobBonus) return char
-
-        val jobInfo = get(char.job)
-
-        return char.copy(
-            baseStats = char.baseStats.plus(jobInfo.baseStatBonus),
-            traitStats = char.traitStats.plus(jobInfo.traitStatBonus)
-//            baseStats = char.baseStats + jobInfo.baseStatBonus,
-//            traitStats = char.traitStats + jobInfo.traitStatBonus
-        )
-    }
 }
 
-/**
- *sample
- *
- * var char = CharacterStatus(
- *     baseStats = BaseStats(...),
- *     traitStats = TraitStats(...),
- *     job = JobBranch.GuillotineCross,
- *     applyJobBonus = true     // 套用滿 Job 加成
- * )
- *
- * 若使用者選擇「沒滿 Job」
- * char = char.copy(applyJobBonus = false)
- * char = JobRepository.applyBonus(char)
- * **/
