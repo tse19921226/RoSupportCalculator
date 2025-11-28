@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1077490847752",
+    "project_id": "rosupportcalculator",
+    "storage_bucket": "rosupportcalculator.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077490847752:android:aad5dfddf0fa939ddec1bd",
+        "android_client_info": {
+          "package_name": "com.elvis_c.rosupportcalculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFlZIkgPhfbSFTxd_W1fgN5N5YaKGEyqk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
