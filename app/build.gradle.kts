@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.kotlin.kapt)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -55,4 +56,9 @@ dependencies {
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
+
+    implementation(platform("com.google.firebase:firebase-bom:29.0.1"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation(libs.firebase.firestore.ktx)
+//    implementation("com.google.firebase:firebase-firestore-ktx")
 }

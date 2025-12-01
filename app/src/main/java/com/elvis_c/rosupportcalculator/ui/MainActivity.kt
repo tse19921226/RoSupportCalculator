@@ -8,6 +8,7 @@ import com.elvis_c.rosupportcalculator.BaseActivity
 import com.elvis_c.rosupportcalculator.OptionItemClick
 import com.elvis_c.rosupportcalculator.R
 import com.elvis_c.rosupportcalculator.databinding.ActivityMainBinding
+import com.elvis_c.rosupportcalculator.firebase.FirestoreUploader
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 
@@ -27,6 +28,8 @@ class MainActivity : BaseActivity() {
 
         setupActionBar()
         setupObserve()
+
+        FirestoreUploader.uploadJupiterLT()
     }
 
     private fun setupObserve() {

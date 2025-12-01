@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "RoSupportCalculator"
 include(":app")
- 
+include(":sharedCalculaotr")
