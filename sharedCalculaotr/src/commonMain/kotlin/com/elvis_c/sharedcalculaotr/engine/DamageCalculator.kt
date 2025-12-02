@@ -648,4 +648,20 @@ object DamageCalculator {
 
         val magicDamage = DamageCalculator.calcMagicDamage(mParams)
     }
+
+    /**
+     * 使用示範
+     *
+     * val result = SkillEngine.compute("soul_combo", ctx)
+     *
+     * // 取得該技能所有模式（通常只有一種）
+     * val variant = result.variants.first()
+     *
+     * // 最終傷害公式輸出單一下
+     * val singleHitDamage = calculateFinalDamage(variant.ratePerHit)
+     *
+     * // 若要算總傷害（例如 7 hit）
+     * val totalDamage = singleHitDamage * variant.hits
+     *
+     */
 }

@@ -1,5 +1,6 @@
 package com.elvis_c.sharedcalculaotr.equipment.trigger
 
+import com.elvis_c.sharedcalculaotr.equipment.effect.StatType
 import com.elvis_c.sharedcalculaotr.equipment.model.Grade
 import kotlinx.serialization.Serializable
 
