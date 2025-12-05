@@ -29,7 +29,7 @@ class MainActivity : BaseActivity() {
         setupActionBar()
         setupObserve()
 
-        FirestoreUploader.uploadJupiterLT()
+//        FirestoreUploader.uploadJupiterLT()
     }
 
     private fun setupObserve() {
