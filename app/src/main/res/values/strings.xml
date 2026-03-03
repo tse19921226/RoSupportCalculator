@@ -4,5 +4,5 @@
     <string name="main_role">My Role</string>
     <string name="main_gear">Popular Gear</string>
     <string name="main_new_role">New Role</string>
-
+    <string name="main_role_added">New role added</string>
 </resources>
