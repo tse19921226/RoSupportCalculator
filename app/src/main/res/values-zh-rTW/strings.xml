@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ro輔助計算機</string>
+
+    <string name="main_role">我的角色</string>
+    <string name="main_gear">熱門裝備</string>
+    <string name="main_new_role">新增角色</string>
+    <string name="main_role_added">已新增角色</string>
 </resources>
